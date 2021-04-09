@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="icon" href="./../media/iconopestana.ico">
+
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <div class="brand">
+            <a href="../index.html">
+                <img class="logo" src="../media/logo_veterinaria-removebg-preview.png" alt="">
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="./us.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul>
+                    <li>
+                        <a href="./vete.html">Veterinaria</a>
+                    </li>
+
+                    <li>
+                        <a href="./product.html">Productos</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./contact.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="spa__info">
+        <h1>Presupuesta Un Servicio!</h1>
+        <form class="spa__formulario">
+            <h2>Presupuestador</h2>
+            <div class="spa__formulario-container">
+                <label for="">Indícanos el tamaño de tu mascota</label>
+                <select name="tamanio" id="tamanio">
+                    <option value="seleccionar">seleccionar</option>
+                    <option value="pequenio">pequeño</option>
+                    <option value="mediano">mediano</option>
+                    <option value="grande">grande</option>
+                </select>
+            </div>
+            <div class="spa__formulario-container">
+                <label for="">Selecciona el servicio que desees</label>
+                <select name="servicio" id="servicio">
+                    <option value="seleccionar">seleccionar</option>
+                    <option value="peluqueria">peluqueria</option>
+                    <option value="cortePelo">corte de pelo</option>
+                    <option value="corteUñas">corte de uñas</option>
+                </select>
+            </div>
+            <div class="button">
+                <button>CALCULAR COSTO</button>
+            </div>
+            <img src="../media/loader.gif" alt="" class="spa__loader oculto">
+
+            <div id="resultado"></div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="../index.html">
+                <img src="../media/logo_veterinaria-removebg-preview.png" alt="">
+            </a>
+        </div>
+        <img class="footer-image" src="../media/perrofooter.png" alt="">
+        <div class="footer-legal">
+            <div>
+                <h2>SíGUENOS!</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>LEGAL</h2>
+                <ul>
+                    <li>
+                        <a href="#">Politica de Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos y condiciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/Presupuesto.js"></script>
+    <script src="../javascript/Interfaz.js"></script>
+    <script src="../javascript/spa.js"></script>
+
+
+</body>
+
+</html>

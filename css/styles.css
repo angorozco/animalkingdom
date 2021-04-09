@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation-bar {
+    width: 100%;
+    height: 130px;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(7px);
+    padding: 0 2rem;
+    display: block;
+}
+
+.navigation-bar .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-bar .brand img {
+    width: 100px;
+}
+
+.navigation-bar ul {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navigation-bar ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a2d6a1;
+    padding: 1rem 1rem;
+}
+
+.navigation-bar ul li ul {
+    display: block;
+    opacity: 0;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    background-color: #a2d6a1;
+    margin-left: .5rem;
+    border-radius: .5rem;
+    margin-top: -10px;
+    transition: all .8s;
+}
+
+.navigation-bar ul li ul li {
+    margin: .1rem;
+}
+
+.navigation-bar ul li ul li a {
+    padding: .5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.navigation-bar ul li:hover ul {
+    opacity: 1;
+    height: 75px;
+}
+
+@media screen and (min-width: 1200px) {
+    .navigation-bar {
+        display: flex;
+        height: 100px;
+    }
+    .navigation-bar ul li a {
+        padding: 2rem 1rem;
+    }
+}
+
+
+/*-------CONTACTO---------*/
+
+.fullpage {
+    width: 100%;
+    height: 86VH;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullpage .contact {
+    height: 400px;
+    width: 400px;
+    display: block;
+    padding: 2rem 3rem;
+    background-color: rgb(250, 255, 255);
+    box-shadow: 5px 5px 10px rgba(172, 169, 169, 0.5);
+}
+
+.fullpage .contact h1 {
+    color: #68D065;
+    font-size: 3rem;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+}
+
+.fullpage .contact input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 2rem;
+    border-bottom: 1px dotted rgb(182, 216, 199);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fullpage .contact input:focus {
+    outline: none;
+}
+
+.fullpage .contact textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 2rem;
+    border-bottom: .2px dotted rgb(182, 216, 199);
+    resize: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fullpage .contact textarea:focus {
+    outline: none;
+}
+
+.fullpage .contact .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullpage .contact .button button {
+    width: 40%;
+    margin-top: 2rem;
+    padding: .4rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #68D065;
+    color: white;
+    letter-spacing: 2.5px;
+}
+
+.fullpage .contact .button button:hover {
+    cursor: pointer;
+}
+
+.fullpage .contact-dog {
+    display: none;
+}
+
+@media screen and (min-width: 1120px) {
+    .fullpage {
+        justify-content: space-between;
+    }
+    .fullpage .contact {
+        margin-left: 200px;
+    }
+    .fullpage .contact-dog {
+        display: block;
+        height: 100%;
+    }
+}
+
+
+/*--------------------FOOTER--------------------*/
+
+footer {
+    width: 100%;
+    height: 280px;
+    display: block;
+    box-shadow: 2px 0 10px rgba(172, 169, 169, 0.5);
+    position: relative;
+}
+
+footer .footer-image {
+    display: none;
+}
+
+footer .footer-logo {
+    text-align: center;
+}
+
+footer .footer-logo img {
+    width: 160px;
+    object-fit: contain;
+}
+
+footer .footer-legal {
+    display: flex;
+    margin-right: 3rem;
+    width: 100%;
+    text-align: center;
+    padding-left: 2rem;
+    justify-content: center;
+}
+
+footer .footer-legal h2 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2rem;
+    color: #C4B7CD;
+}
+
+footer .footer-legal div {
+    margin: 0 2rem 2rem 0;
+}
+
+footer .footer-legal div ul {
+    list-style: none;
+}
+
+footer .footer-legal ul li {
+    margin-top: .5rem;
+}
+
+footer .footer-legal ul li a {
+    text-decoration: none;
+    color: rgb(0, 139, 42);
+    padding: 0 0 0 0.8rem;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        /*  width: 100%; */
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        /* box-shadow: 2px 0 10px rgba(172, 169, 169, 0.5);
+        position: relative; */
+    }
+    footer .footer-image {
+        display: block;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    footer .footer-logo {
+        width: 150px;
+        height: 150px;
+    }
+    footer .footer-logo img {
+        height: 100%;
+        width: 100%;
+        /*   object-fit: contain; */
+    }
+    footer .footer-legal {
+        /* display: flex; */
+        justify-content: space-between;
+        /* margin-right: 3rem; */
+        z-index: 1;
+    }
+    /* footer .footer-legal h2 {
+        font-family: 'Covered By Your Grace', cursive;
+        font-size: 2rem;
+        color: #C4B7CD;
+    } */
+    footer .footer-legal div {
+        margin: 1rem;
+    }
+    /*
+    footer .footer-legal ul li {
+        margin-top: .5rem;
+    } */
+    /* footer .footer-legal ul li a {
+        text-decoration: none;
+        color: rgb(0, 139, 42);
+        padding: 0 0 0 0.8rem;
+        font-size: 0.9rem;
+    } */
+}
+
+
+/*--------------------INDEX--------------------*/
+
+header {
+    background: url(../media/pug.png);
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+}
+
+header .coment {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    align-items: center;
+    top: 300px;
+    right: 80px;
+    background-color: rgba(250, 255, 255, 0.3);
+}
+
+header .coment h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    margin-top: .5rem;
+    color: #8E9AAF;
+    font-size: 1.3rem;
+}
+
+header .coment button {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #68D065;
+    ;
+}
+
+header .coment button a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2.5px
+}
+
+header .coment button:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        height: 660px;
+        margin-top: -120px;
+    }
+    header .coment {
+        width: 400px;
+        height: 150px;
+        right: 160px;
+        background-color: rgb(250, 255, 255);
+        box-shadow: 5px 5px 10px rgba(172, 169, 169, 0.5);
+    }
+    header .coment h1 {
+        font-size: 3rem;
+    }
+    header .coment button {
+        /* display: block;
+        margin: auto; */
+        width: 30%;
+        /* padding: .5rem;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        background-color: #68D065;
+        ; */
+    }
+}
+
+.check {
+    display: block;
+    width: 100%;
+}
+
+.check__container h2 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: #68D065;
+}
+
+.check__container p {
+    padding: 2rem;
+    text-align: center;
+    color: #8E9AAF;
+}
+
+.check__button {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #68D065;
+    ;
+}
+
+.check__button a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2.5px
+}
+
+.check__button:focus {
+    outline: none;
+}
+
+.check_image {
+    width: 100%;
+}
+
+.emergency {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.emergency__info h2 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: #8E9AAF;
+}
+
+.emergency__info p {
+    padding: 2rem;
+    text-align: center;
+    color: #68D065;
+}
+
+.emergency__info .p {
+    color: #8E9AAF;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2rem;
+}
+
+.emergency__image {
+    width: 100%;
+}
+
+.index {
+    display: flex;
+    color: #68D065;
+    margin: 3rem 0 4rem 0;
+}
+
+.index img {
+    width: 150px;
+}
+
+.index h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.index p {
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .check {
+        display: flex;
+    }
+    .check__container {
+        width: 50%;
+    }
+    .check__container h2 {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    .check_image {
+        width: 50%;
+    }
+    .check__button {
+        width: 30%;
+    }
+    .emergency {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .emergency__info {
+        width: 50%;
+    }
+    .emergency__info h2 {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    .emergency__image {
+        width: 50%;
+    }
+    .index {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .check__container h2 {
+        font-size: 5rem;
+    }
+    .check__container p {
+        font-size: 1.5rem;
+    }
+    .emergency__info h2 {
+        font-size: 5rem;
+    }
+    .emergency__info p {
+        font-size: 1.5rem;
+    }
+    .index h2 {
+        font-size: 5rem;
+    }
+    .index p {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*--------------------SPA--------------------*/
+
+.spa__info {
+    padding: 0px;
+    width: 100%;
+    /* height: 96vh; */
+}
+
+.spa__info h1 {
+    font-size: 3rem;
+    color: #68D065;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+}
+
+.spa__info .spa__formulario {
+    margin: auto;
+    /*     height: 400px; */
+    width: 350px;
+    display: block;
+    padding: 2rem 3rem;
+    background-color: rgb(250, 255, 255);
+    box-shadow: 5px 5px 10px rgba(172, 169, 169, 0.5);
+    color: #8E9AAF;
+}
+
+.spa__info .spa__formulario h2 {
+    color: #68D065;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.spa__info .spa__formulario .spa__formulario-container select {
+    border: none;
+    border-bottom: 1px dotted rgb(182, 216, 199);
+    outline: none;
+}
+
+.spa__info .spa__mensaje {
+    width: 100%;
+    height: 50px;
+    margin: 1rem auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correcto {
+    border: 1px solid #68D065;
+    background-color: #9be698;
+}
+
+.incorrecto {
+    border: 1px solid #d06565;
+    background-color: #e69898;
+}
+
+.spa__info .spa__presupuesto {
+    width: 100%;
+    margin: 1rem auto;
+    color: white;
+    text-align: center;
+}
+
+.spa__info .spa__presupuesto .spa__presupuesto-title {
+    background-color: #68D065;
+    width: 100%;
+}
+
+.spa__info .spa__presupuesto h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.spa__info .spa__presupuesto p {
+    text-transform: uppercase;
+    margin: .5rem 1rem;
+}
+
+.spa__info .spa__presupuesto span {
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.spa__info .spa__formulario h1 {
+    color: #68D065;
+    font-size: 3rem;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+}
+
+.spa__info .spa__formulario select {
+    width: 100%;
+    margin: .5rem auto;
+}
+
+.spa__loader {
+    display: block;
+    margin: auto;
+}
+
+.oculto {
+    display: none;
+}
+
+.spa__info .spa__formulario .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spa__info .spa__formulario .button button {
+    width: 40%;
+    margin-top: 2rem;
+    padding: .4rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #68D065;
+    color: white;
+    letter-spacing: 2.5px;
+}
+
+.spa__info .spa__formulario .button button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+    .spa__info {
+        padding: 50px;
+        width: 100%;
+        /* height: 96vh; */
+    }
+    .spa__info .spa__formulario {
+        width: 400px;
+    }
+}
+
+
+/*--------------------CHEQUEO--------------------*/
+
+.chequeo {
+    display: flex;
+    width: 100%;
+    height: 86VH;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chequeo img {
+    display: none;
+}
+
+.chequeo__info {
+    width: 100%;
+    height: 400px;
+    margin-right: 0;
+}
+
+.chequeo__info h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #68D065;
+}
+
+.chequeo__info p {
+    color: #8E9AAF;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.chequeo__masinfo {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.masinfo {
+    width: 100%;
+}
+
+.chequeo__masinfo img {
+    display: none;
+}
+
+.masinfo p {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    color: #8E9AAF;
+    margin-left: 0;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .chequeo img {
+        display: block;
+        height: 90%;
+    }
+    .chequeo__info {
+        width: 45%;
+        height: 400px;
+        margin-right: 5rem;
+    }
+    .chequeo__info h1 {
+        font-size: 4rem;
+    }
+    .chequeo__info p {
+        /* color: #8E9AAF;
+        text-align: center;
+        font-size: 1.2rem; */
+        padding: 2.5rem;
+    }
+    .masinfo {
+        width: 50%;
+    }
+    .chequeo__masinfo img {
+        display: block;
+    }
+    .masinfo p {
+        font-size: 1.2rem;
+        width: 480px;
+        text-align: center;
+        color: #8E9AAF;
+        margin-left: 5rem;
+        padding: 0;
+    }
+}
+
+
+/*--------------------NOSOTROS--------------------*/
+
+.us {
+    width: 100%;
+    height: 96VH;
+    display: block;
+    margin: auto;
+}
+
+.us h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: #68D065;
+}
+
+.us p {
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #8E9AAF;
+}
+
+.us img {
+    display: none;
+}
+
+.equipo {
+    margin-top: 1rem;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.equipo div {
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+}
+
+.equipo div h2 {
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 3rem;
+    color: #68D065;
+}
+
+.equipo div ul {
+    text-align: center;
+    color: #8E9AAF;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.equipo img {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .us h1 {
+        /*  font-family: 'Covered By Your Grace', cursive;
+        text-align: center;
+        margin-top: 3rem; */
+        font-size: 4rem;
+        /* color: #68D065; */
+    }
+    .us p {
+        padding: 2rem 4rem;
+        /* font-size: 1.2rem;
+        text-align: center;
+        color: #8E9AAF; */
+    }
+    .us img {
+        display: block;
+        margin-left: 23rem;
+    }
+    .equipo {
+        margin-top: 1rem;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .equipo div {
+        width: 30%;
+        height: 300px;
+        margin-left: 15rem;
+    }
+    .equipo img {
+        display: block;
+        height: 100%;
+    }
+}
+
+
+/*----------------PRODUCT--------------*/
+
+.seccion-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    position: relative;
+}
+
+.title_prod {
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: #68D065;
+}
+
+#contenido {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+}
+
+#loader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(../media/loader.gif);
+    background-size: contain;
+}
+
+.card {
+    width: 250px;
+    height: 360px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    margin: 1rem;
+    color: #8E9AAF;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.card .card__titulo {
+    text-align: center;
+    color: #68D065;
+}
+
+.card .card__resumen {
+    margin: 1rem auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .seccion-productos {
+        min-height: 80VH;
+    }
+    #contenido {
+        flex-direction: row;
+    }
+}
+
+
+/*--------------------VETERINARIA--------------------*/
+
+.service {
+    width: 100%;
+    padding: 0rem 2rem;
+}
+
+.service h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+    color: #68D065;
+}
+
+.service h2 {
+    color: #a2d6a1;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    color: #8E9AAF;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.service ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.service ul li {
+    color: #8E9AAF;
+}

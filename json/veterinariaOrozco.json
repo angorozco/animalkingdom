@@ -1,0 +1,25 @@
+[{
+        "id": 1,
+        "img": "../media/1.png",
+        "titulo": "Pollito bebé",
+        "resumen": "Este pollito conquista a cualquier perrito."
+    },
+    {
+        "id": 2,
+        "img": "../media/2.png",
+        "titulo": "Hueso Kong",
+        "resumen": "Ponele comida dentro y lo tendrás entretenido toda la semana."
+    },
+    {
+        "id": 3,
+        "img": "../media/3.png",
+        "titulo": "Hueso",
+        "resumen": "Hueso rico y comestible, para todo tipo de perros"
+    },
+    {
+        "id": 4,
+        "img": "../media/4.png",
+        "titulo": "Hueso patita",
+        "resumen": "El mejor huesito para tu perrito. Le encanta."
+    }
+]
